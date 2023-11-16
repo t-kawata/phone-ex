@@ -144,9 +144,10 @@ import { mapState } from "pinia";
 import { AstUA, EVENT_TYPE, UA_STATUS } from "ast-ua";
 import { useCustomerStore } from "src/stores/customer-store";
 import Event from "src/tools/Event";
+import Ringing from "src/assets/ringing.mp3";
 
 const KEY = "PREV_USER";
-const RINGING = new Audio("src/assets/ringing.mp3");
+const RINGING = new Audio(Ringing);
 
 export default defineComponent({
   data() {
