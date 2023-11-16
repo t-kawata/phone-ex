@@ -1,1 +1,54 @@
 // app global css in SCSS form
+.none {
+  display: none;
+}
+.calling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.phone-page-container {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+.phone-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 160px;
+}
+.account-status {
+  line-height: 14px;
+  span {
+    &.badge {
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      margin-right: 10px;
+      &.none {
+        background-color: #eb4034;
+      }
+      &.ready {
+        background-color: #34eb7a;
+      }
+    }
+    &.red {
+      color: #eb4034;
+    }
+    &.green {
+      color: #34eb7a;
+    }
+  }
+}
+.number-input {
+  width: 400px;
+}
+.info-box {
+  border-radius: 5px;
+}
