@@ -1,15 +1,17 @@
 <template>
   <q-page>
-    <SimplePhone />
+    <!-- ページのコンテンツスペース 🔻🔻🔻 -->
+
+    <!-- ページのコンテンツスペース 🔺🔺🔺 -->
+    <!-- その他 🔻🔻🔻 -->
+
+    <!-- その他 🔺🔺🔺 -->
   </q-page>
 </template>
 <script>
 import { defineComponent } from "vue";
-import SimplePhone from "src/components/SimplePhone.vue";
 
 export default defineComponent({
-  components: {
-    SimplePhone,
-  },
+  components: {},
 });
 </script>

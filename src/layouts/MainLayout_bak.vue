@@ -10,21 +10,13 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-        <q-toolbar-title>
-          <!-- ヘッダーのタイトル 🔻🔻🔻 -->
-
-          <!-- ヘッダーのタイトル 🔺🔺🔺 -->
-        </q-toolbar-title>
+        <q-toolbar-title> AIChain Phone-Ex </q-toolbar-title>
         <q-space />
-        <!-- ヘッダーの右端ボタンスペース 🔻🔻🔻 -->
-
-        <!-- ヘッダーの右端ボタンスペース 🔺🔺🔺 -->
+        <UserForm />
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-      <!-- 左のドローワースペース 🔻🔻🔻 -->
-
-      <!-- 左のドローワースペース 🔺🔺🔺 -->
+      <CustomerList />
     </q-drawer>
     <q-page-container>
       <router-view />
@@ -33,9 +25,14 @@
 </template>
 <script>
 import { defineComponent, ref } from "vue";
+import UserForm from "src/components/UserForm.vue";
+import CustomerList from "src/components/CustomerList.vue";
 
 export default defineComponent({
-  components: {},
+  components: {
+    UserForm,
+    CustomerList,
+  },
   setup() {
     const leftDrawerOpen = ref(false);
     return {
